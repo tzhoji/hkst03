@@ -1,0 +1,97 @@
+// ContactForm.scss
+
+.emailcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+  
+  .contact-form {
+    width: 800px;
+    padding: 4rem;
+    background-color: #615f5f;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    
+    @media (max-width: 767px) {
+      width: 90%;
+    }
+  
+    @media (min-width: 1200px) {
+      width: 900px;
+    }
+  }
+  
+  .input-field,
+  .textarea-field {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    
+    @media (max-width: 767px) {
+      font-size: 0.9rem;
+    }
+  }
+  
+  .input-field {
+    height: 80px;
+  }
+  
+  .textarea-field {
+    height: 180px;
+  }
+  
+  .submitgrid {
+    padding-top:20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+  .submit-button {
+    // display: block;
+    grid-column-start: 2;
+    width: 100%;
+    padding: 1rem;
+    // background-color: #00ff00 ;
+    
+    border-width: 1px;
+    border-style:solid;
+    border-color: #00ff00 #ffff00 #ffff00;
+    border-radius: 3rem;
+    color: transparent;
+    // background-image: linear-gradient(to bottom);
+    background-clip:text;
+    box-shadow:-2px -2px 0.5rem #00ff0086,
+    2px 2px 0.5rem inset #00ff0086,
+    2px 2px 0.5rem #ffff0086,
+    -2px -2px 0.5rem inset #ffff0086;
+
+
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+    @media (max-width: 767px) {
+      font-size: 0.9rem;
+    }
+  }
+  
+  .submit-button:hover {
+    color:#615f5f;
+    background-clip: border-box;
+    // background:  #00ff00;
+    background: linear-gradient(160deg, #00ff00, #bbff00, #ffff00);
+    box-shadow: -0.5rem -0.25rem 1.5rem #00ff008f ,
+    0.5rem 0.25rem 1.5rem #ffff008f ;
+  
+  }
+}
