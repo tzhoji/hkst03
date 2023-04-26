@@ -4,7 +4,7 @@ const Chatbot = () => {
   useEffect(() => {
     (function(d, m) {
       var kommunicateSettings = {
-        appId: '37a402262effaabfaf75923faed38a525'',
+        appId: '37a402262effaabfaf75923faed38a525',
         popupWidget: true,
         automaticChatOpenOnNavigation: true,
       };
