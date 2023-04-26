@@ -1,0 +1,80 @@
+.checkout-container {
+    width: 55%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto 0;
+
+    .checkout-header {
+        width: 100%;
+        padding: 10px 0;
+        display: flex;
+        margin-left:40px;
+        justify-content: space-between;
+        border-bottom: 1px solid darkgrey;
+
+        .header-block {
+            text-transform: capitalize;
+            width: 23%;
+            
+
+            &:last-child {
+                width: 8%;
+            }
+        }
+    }
+
+    .checkouttotal {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+
+        .total {
+            grid-column-start: 5;
+            margin-top: 18px;
+            // align-self: auto;
+            justify-self: right;
+            font-size: 36px;
+        }
+        // display: grid;
+        // grid-template-columns: subgrid;
+        // grid-column: 3/-1;
+
+        .checkout-button {
+                grid-column-start: -1;
+                // margin-left: 30px;
+                // margin-top:10px;
+                
+                background-image: linear-gradient(45deg, rgb(0, 47, 255) , #a9d6f0, #2a3fff);
+                border: none;
+                color: #710000;
+                margin: 10px;
+                padding: 15px 45px;
+                text-align: center;
+                text-transform: uppercase;
+                transition: 0.5s;
+                background-size: 200% auto;
+                color: white;            
+                box-shadow: 0 0 20px #eee;
+                border-radius: 30px;
+                display: block;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                
+                @media (max-width: 767px) {
+                font-size: 0.9rem;
+                }
+            }
+        .checkout-button:hover{
+            background: linear-gradient(135deg, #00c7c5 0%, #0088d7 100%);
+            color:#252323;}
+
+
+
+
+}
+
+
+
+}
